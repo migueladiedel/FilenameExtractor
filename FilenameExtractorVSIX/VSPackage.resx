@@ -57,11 +57,11 @@
   </resheader>
 
   <!-- ============================================== -->
-  <!-- VSCT Menu Command Text (ID: 100-199)          -->
+  <!-- Menu Command Text                             -->
   <!-- ============================================== -->
-  <data name="100" xml:space="preserve">
+  <data name="CmdCopyFilenameWithoutExtension" xml:space="preserve">
     <value>Copy Filename Without Extension</value>
-    <comment>Menu command text - ButtonText for CopyFilenameWithoutExtension command</comment>
+    <comment>Menu command text for copying filename without extension</comment>
   </data>
 
   <!-- ============================================== -->

@@ -21,7 +21,7 @@
       <Button guid="guidFilenameExtractorVSIXPackageCmdSet" id="CopyFilenameWithoutExtensionCommandId" priority="0x0100" type="Button">
         <Parent guid="guidFilenameExtractorVSIXPackageCmdSet" id="FilenameExtractorMenuGroup" />
         <Strings>
-          <ButtonText>@VSPackage;100</ButtonText>
+          <ButtonText>Copy Filename Without Extension</ButtonText>
           <LocCanonicalName>.FilenameExtractor.CopyFilenameWithoutExtension</LocCanonicalName>
         </Strings>
       </Button>

@@ -28,8 +28,17 @@ namespace FilenameExtractorVSIX.Commands
             resourceManager = new ResourceManager("FilenameExtractorVSIX.VSPackage", typeof(CopyFilenameWithoutExtensionCommand).Assembly);
 
             var menuCommandID = new CommandID(CommandSet, CommandId);
-            var menuItem = new MenuCommand(this.Execute, menuCommandID);
+            var menuItem = new OleMenuCommand(this.Execute, menuCommandID);
+            menuItem.BeforeQueryStatus += OnBeforeQueryStatus;
             commandService.AddCommand(menuItem);
+        }
+
+        private void OnBeforeQueryStatus(object sender, EventArgs e)
+        {
+            if (sender is OleMenuCommand command)
+            {
+                command.Text = GetLocalizedString("CmdCopyFilenameWithoutExtension");
+            }
         }
 
         public static CopyFilenameWithoutExtensionCommand Instance { get; private set; }
