@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- ============================================== -->
+  <!-- VSCT Menu Command Text (ID: 100-199)          -->
+  <!-- ============================================== -->
+  <data name="100" xml:space="preserve">
+    <value>Copy Filename Without Extension</value>
+    <comment>Menu command text - ButtonText for CopyFilenameWithoutExtension command</comment>
+  </data>
+
+  <!-- ============================================== -->
+  <!-- Status Bar Messages (ID: 200-299)             -->
+  <!-- ============================================== -->
+  <data name="StatusCopied" xml:space="preserve">
+    <value>Copied: {0}</value>
+    <comment>Status bar message after copying. {0} = filename</comment>
+  </data>
+
+  <!-- ============================================== -->
+  <!-- Error/Warning Messages (ID: 300-399)          -->
+  <!-- ============================================== -->
+  <data name="ErrorNoFileSelected" xml:space="preserve">
+    <value>No file selected.</value>
+    <comment>Error when no file is selected</comment>
+  </data>
+  <data name="ErrorCopyFailed" xml:space="preserve">
+    <value>Failed to copy filename: {0}</value>
+    <comment>Error when copy fails. {0} = error message</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Filename Extractor</value>
+    <comment>Title for error/warning dialogs</comment>
+  </data>
+
+</root>

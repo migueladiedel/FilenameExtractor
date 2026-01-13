@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidFilenameExtractorVSIXPackage">
+
+    <Groups>
+      <!-- Grupo en el menú contextual de la pestaña del documento -->
+      <Group guid="guidFilenameExtractorVSIXPackageCmdSet" id="FilenameExtractorMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_EZDOCWINTAB"/>
+      </Group>
+      <!-- Grupo en el menú contextual del Explorador de Soluciones (archivos) -->
+      <Group guid="guidFilenameExtractorVSIXPackageCmdSet" id="FilenameExtractorSolutionExplorerGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidFilenameExtractorVSIXPackageCmdSet" id="CopyFilenameWithoutExtensionCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidFilenameExtractorVSIXPackageCmdSet" id="FilenameExtractorMenuGroup" />
+        <Strings>
+          <ButtonText>@VSPackage;100</ButtonText>
+          <LocCanonicalName>.FilenameExtractor.CopyFilenameWithoutExtension</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+
+  </Commands>
+
+  <CommandPlacements>
+    <!-- Colocar el comando también en el Explorador de Soluciones -->
+    <CommandPlacement guid="guidFilenameExtractorVSIXPackageCmdSet" id="CopyFilenameWithoutExtensionCommandId" priority="0x0100">
+      <Parent guid="guidFilenameExtractorVSIXPackageCmdSet" id="FilenameExtractorSolutionExplorerGroup"/>
+    </CommandPlacement>
+  </CommandPlacements>
+
+  <KeyBindings>
+    <!-- Atajo: Ctrl+K, Ctrl+N -->
+    <KeyBinding guid="guidFilenameExtractorVSIXPackageCmdSet" id="CopyFilenameWithoutExtensionCommandId"
+                editor="guidVSStd97" key1="K" mod1="Control" key2="N" mod2="Control"/>
+  </KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="guidFilenameExtractorVSIXPackage" value="{1581d1a7-db4b-4cc7-afad-c144bfab7d95}" />
+
+    <GuidSymbol name="guidFilenameExtractorVSIXPackageCmdSet" value="{e7c8a1d2-5f3b-4a9e-8c6d-2b1f0e9d8c7a}">
+      <IDSymbol name="FilenameExtractorMenuGroup" value="0x1020" />
+      <IDSymbol name="FilenameExtractorSolutionExplorerGroup" value="0x1021" />
+      <IDSymbol name="CopyFilenameWithoutExtensionCommandId" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>
